@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Fall2024-Assignment1-knlim.props" />
+</Project>

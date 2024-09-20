@@ -1,0 +1,7 @@
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/Fall2024-Assignment1-knlim
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/appsettings.Development.json
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/appsettings.json
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/Fall2024-Assignment1-knlim.dll
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/Fall2024-Assignment1-knlim.deps.json
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/Fall2024-Assignment1-knlim.runtimeconfig.json
+/Users/kimberly/cs330/Fall2024-Assignment1-knlim/obj/Release/net7.0/PubTmp/Out/Fall2024-Assignment1-knlim.pdb
