@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{6C2AF5D6-7C61-4B77-80F6-C17154417D05}|https">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Fall2024-Assignment1-knlim PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/index.html">
     <Files>
-      <File FileName="wwwroot/index.html" Line="11" Column="1" />
+      <File FileName="wwwroot/index.html" Line="12" Column="65" />
+      <File FileName="wwwroot/styles.css" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Fall2024-Assignment1-knlim" expanded="True">
+          <Node name="Fall2024-Assignment1-knlim">
             <Node name="Fall2024-Assignment1-knlim">
               <Node name="wwwroot" expanded="True">
                 <Node name="index.html" selected="True" />
@@ -20,8 +19,13 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

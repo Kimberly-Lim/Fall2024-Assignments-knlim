@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/themes/smoothness/jquery-ui.css"
+          integrity="sha512-f0l2ynL2MVRoPYTVA5mcHKrE/pc+n++bYaSDEyxayjK0RIe355gjH82i9AbMMzyDXBz+H2RyPY0MXjvwxZjEVA=="
+          crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"
+            integrity="sha512-MlEyuwT6VkRXExjj8CdBKNgd+e2H+aYZOCUaCrt9KRk6MlZDOs91V1yK22rwm8aCIsb5Ec1euL8f0g58RKT/Pg=="
+            crossorigin="anonymous"></script>
+
+    <title>Search Engine</title>
+
+</head>
+<body>
+    <main>
+        <div class="centered-container">
+            <header>
+                <h1 class="searchEngine"> "GOOGLE" </h1>
+            </header>
+            <input type="text" class="textbox" id="query" placeholder="Search" />
+            <div class="buttons-container">
+                <button class="button-17" id="searchBtn" role="button"> Search</button>
+                <button class="button-17" id="timeBtn">Display Current Time</button>
+                <button class="button-17" id="luckyBtn">I'm Feeling Lucky</button>
+            </div>
+        </div>
+
+        <div id="searchResults"></div>
+        <div id="time"></div>
+    </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
