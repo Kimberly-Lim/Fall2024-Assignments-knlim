@@ -1,0 +1,102 @@
+@model Fall2024_Assignment3_knlim.Models.ActorDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Actor</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Actor.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Actor.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Actor.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Actor.Gender)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Actor.IMDBLink)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Actor.IMDBLink)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Actor.Photo)
+        </dt>
+        <dd class="col-sm-10">
+            @if (Model.Actor.Photo != null && Model.Actor.Photo.Length > 0)
+            {
+                var base64 = Convert.ToBase64String(Model.Actor.Photo);
+                var imgSrc = string.Format("data:image/jpg;base64,{0}", base64);
+                <img src="@imgSrc" style="width: 80px; height: 100px;" alt="Actor Photo" />
+            }
+            else
+            {
+                <p>No image available</p>
+            }
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Actor.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<h5>Movies</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Movies)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Movies)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-controller="Movie" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-controller="Movie" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-controller="Movie" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h5>Overall Sentiment: @Model.AvgSentiment</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Movies)*@
+                <h7>Tweets</h7>
+            </th>
+            <th>
+                <h7>Sentiments</h7>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tweetSentiment in Model.TweetsAndSentiments)
+        {
+            <tr>
+                <td>@tweetSentiment[0]</td>
+                <td>@tweetSentiment[1]</td>
+            </tr>
+        }
+    </tbody>
+</table>
